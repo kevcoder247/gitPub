@@ -1,14 +1,18 @@
 const express = require('express');
-const fruits = require('./models/drinks')
+const drinks = require('./models/drinks')
+
 const app = express();
 const port = 3000;
 
+//Index
 app.get('/', (req, res) => {
-    res.send(' Welcome to the Gitpub App!')
+    res.render('drinks_index.ejs')
 })
 
-app.get('/drinks/', (req, res) => {
-    res.render('show.ejs')
+app.get('/drinks/:indexOfDrinksArray', (req, res) => {
+    res.render('show.ejs',{
+        drink: drinks[req.params.indexOfDrinksArray]
+    })
 })
 
 app.listen(port, () => {

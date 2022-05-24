@@ -1,7 +1,7 @@
 
 const drinks = [
     {
-      name: "cruddy",
+      name: "cruddy mary",
       price: 132,
       image: "https://i.imgur.com/Va5iIw5",
     },
