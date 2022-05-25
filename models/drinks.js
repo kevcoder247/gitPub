@@ -1,4 +1,3 @@
-
 const drinks = [
     {
       name: "cruddy mary",

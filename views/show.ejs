@@ -5,11 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drinks</title>
+    <style type="text/css">
+        body {
+          color: blanchedalmond;
+          background-color: steelblue;
+        }
+        h3{
+            color: black;
+        }
+      </style>
 </head>
 <body>
     <h1>Drinks Menu</h1>
     <!-- //shows drink on the page -->
-    <%= drink.name %>
+    <h3><%= drink.name %></h3>
 
+    <p>Price: $<%= drink.price %> </p>
+
+    <!-- <% for(let i = 0; i < drink.length; i++){ %>
+        <p>
+            <%= drink[i].name %>
+        </p>
+    <% } %> -->
 </body>
 </html>

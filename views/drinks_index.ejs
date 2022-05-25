@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- figure out why external sheet is not working and internal styles are -->
     <!-- <link rel="stylesheet" href="/css/main.css"> -->
     <title>Drinks</title>
 
@@ -12,9 +13,13 @@
       color: blanchedalmond;
       background-color: steelblue;
     }
+    h3{
+        color: black;
+    }
   </style>
 </head>
 <body>
     <h1>Welcome to gitPub index ejs</h1>
+    <h3> Name: <%= drink.name %>  </h3> 
 </body>
 </html>
