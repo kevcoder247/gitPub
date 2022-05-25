@@ -20,7 +20,9 @@
     <ul>
       <% for(let i = 0; i < drink.length; i++ ){ %>
         <% let word = drink[i].name %>
-        <li><%= word[0].toUpperCase() + word.substring(1) %></li>
+
+        <li><a href="/drinks/<%=i%>"><%= word[0].toUpperCase() + word.substring(1) %></a></li>
+
       <% } %>
     </ul>
 </body>
