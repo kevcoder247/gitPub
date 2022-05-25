@@ -17,7 +17,11 @@
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
-
-    <h3>Name: <%= drink[1].name %></h3>
+    <ul>
+      <% for(let i = 0; i < drink.length; i++ ){ %>
+        <% let word = drink[i].name %>
+        <li><%= word[0].toUpperCase() + word.substring(1) %></li>
+      <% } %>
+    </ul>
 </body>
 </html>
