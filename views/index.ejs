@@ -17,12 +17,23 @@
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
+
+    <!--DRINKS----------------------------------------->
     <ul>
       <% for(let i = 0; i < drink.length; i++ ){ %>
         <% let word = drink[i].name %>
 
         <li><a href="/drinks/<%=i%>"><%= word[0].toUpperCase() + word.substring(1) %></a></li>
 
+      <% } %>
+    </ul>
+    <!--Food----------------------------------------->
+    <ul>
+      <% for(let i = 0; i < food.length; i++ ){ %>
+        <% let word = food[i].name %>
+  
+        <li><a href="/food/<%=i%>"><%= word[0].toUpperCase() + word.substring(1) %></a></li>
+  
       <% } %>
     </ul>
 </body>
